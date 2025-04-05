@@ -1,46 +1,36 @@
-# Getting Started with Create React App
+# 🌐 Jenny Mai - Personal Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to my personal website! This site serves as a showcase of my skills, projects, and experiences as a Software Engineer specializing in Web Development, Data Science, and DevOps.
 
-## Available Scripts
+## 🚀 Live Demo
+Visit: [jennymai10.github.io](https://jennymai10.github.io)
 
-In the project directory, you can run:
+## 📋 About Me
+I am a Data Science & Computer Science undergraduate at the **University of Illinois Urbana-Champaign** (Aug 2022 – May 2026), currently participating in exchange studies at **University of Melbourne** and **Nanyang Technological University** (2024 - 2025). I am a **James Scholar** and recipient of the **UIUC iSchool Scholarship**.
 
-### `npm start`
+I enjoy building scalable web applications, developing data pipelines, and deploying solutions through robust DevOps practices. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 💼 Experience
+- **Software Engineer Intern** - Bumpups (Jan 2025 – Present, Remote)
+- **Software Engineer Intern** - Illini Media (Aug 2023 – Present, Champaign, IL)
+- **Project Manager & Fullstack Developer Intern** - University of Melbourne C-Lara Lab (Jul 2024 – Dec 2024, Melbourne, AU)
+- **Research Assistant - Data Analyst** - UIUC Center for Health Informatics (Aug 2023 – Present)
+- **Data Engineer Intern** - VietAI Research (Jun 2021 – Mar 2022, San Francisco, CA)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## 💡 Projects
+- **[Melbourne Real Estate & Prediction](https://github.com/jennymai10/melb_realestate)** (Python, Spark, GeoPandas)  
+  Developed a data pipeline to enhance real estate data, engineer livability/affordability indexes, and create predictive models for housing prices and rental trends.
+  
+- **[New York Taxi Analysis & Prediction](https://github.com/jennymai10/nyc-taxi-prediction)** (Python, Spark)  
+  Built predictive models to estimate travel costs with a 94% R-squared accuracy, providing 65% optimized travel recommendations.
 
-### `npm test`
+## 🔧 Skills
+- **Programming Languages:** Python, C++, SQL, JavaScript, Java, HTML/CSS  
+- **Frameworks & Libraries:** Django, React.js, Node.js, Flask, NumPy, Pandas, Plotly, Matplotlib, PyTorch  
+- **Tools & Platforms:** Docker, GCP/AWS, Git, CI/CD Pipelines, MySQL, PostgreSQL, Apache Spark, Jupyter Notebook, Google Colab, Kubernetes, Power BI  
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 📫 Contact
+- **Website:** [jennymai10.github.io](https://jennymai10.github.io)  
+- **GitHub:** [github.com/jennymai10](https://github.com/jennymai10)  
+- **LinkedIn:** [linkedin.com/in/nhumai](https://linkedin.com/in/nhumai)  
+- **Email:** [jennymai10@outlook.com](mailto:jennymai10@outlook.com)
