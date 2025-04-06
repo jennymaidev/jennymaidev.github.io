@@ -9,10 +9,10 @@ function Project() {
         <h1>Projects</h1>
         <div className="projects-grid">
             <div className="project">
-                <a href="https://github.com/jennymai10/melb_realestate" target="_blank" rel="noreferrer">
+                <a href="https://github.com/jennymaidev/melb_realestate" target="_blank" rel="noreferrer">
                     <img src={mock04} className="zoom" alt="Melbourne Real Estate Project" width="100%" />
                 </a>
-                <a href="https://github.com/jennymai10/melb_realestate" target="_blank" rel="noreferrer">
+                <a href="https://github.com/jennymaidev/melb_realestate" target="_blank" rel="noreferrer">
                     <h2>Melbourne Real Estate & Prediction</h2>
                 </a>
                 <p>
@@ -21,10 +21,10 @@ function Project() {
             </div>
 
             <div className="project">
-                <a href="https://github.com/jennymai10/nyc-taxi-prediction" target="_blank" rel="noreferrer">
+                <a href="https://github.com/jennymaidev/nyc-taxi-prediction" target="_blank" rel="noreferrer">
                     <img src={mock05} className="zoom" alt="New York Taxi Analysis & Prediction" width="100%" />
                 </a>
-                <a href="https://github.com/jennymai10/nyc-taxi-prediction" target="_blank" rel="noreferrer">
+                <a href="https://github.com/jennymaidev/nyc-taxi-prediction" target="_blank" rel="noreferrer">
                     <h2>New York Taxi Analysis & Prediction</h2>
                 </a>
                 <p>

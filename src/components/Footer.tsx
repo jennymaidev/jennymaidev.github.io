@@ -8,9 +8,9 @@ function Footer() {
   return (
     <footer>
       <div>
-        <a href="https://github.com/jennymai10" target="_blank" rel="noreferrer"><GitHubIcon/></a>
-        <a href="https://www.linkedin.com/in/nhumai/" target="_blank" rel="noreferrer"><LinkedInIcon/></a>
-        <a href="mailto:jennymai10@outlook.com" target="_blank" rel="noreferrer"><EmailIcon/></a>
+        <a href="https://github.com/jennymaidev" target="_blank" rel="noreferrer"><GitHubIcon/></a>
+        <a href="https://www.linkedin.com/in/jennymaidev/" target="_blank" rel="noreferrer"><LinkedInIcon/></a>
+        <a href="mailto:jennymaidev@gmail.com" target="_blank" rel="noreferrer"><EmailIcon/></a>
       </div>
       <p>By Jenny Mai with ♡</p>
     </footer>

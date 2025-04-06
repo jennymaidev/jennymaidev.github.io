@@ -3,7 +3,7 @@
 Welcome to my personal website! This site serves as a showcase of my skills, projects, and experiences as a Software Engineer specializing in Web Development, Data Science, and DevOps.
 
 ## 🚀 Live Demo
-Visit: [jennymai10.github.io](https://jennymai10.github.io)
+Visit: [jennymaidev.github.io](https://jennymaidev.github.io)
 
 ## 📋 About Me
 I am a Data Science & Computer Science undergraduate at the **University of Illinois Urbana-Champaign** (Aug 2022 – May 2026), currently participating in exchange studies at **University of Melbourne** and **Nanyang Technological University** (2024 - 2025). I am a **James Scholar** and recipient of the **UIUC iSchool Scholarship**.
@@ -18,10 +18,10 @@ I enjoy building scalable web applications, developing data pipelines, and deplo
 - **Data Engineer Intern** - VietAI Research (Jun 2021 – Mar 2022, San Francisco, CA)
 
 ## 💡 Projects
-- **[Melbourne Real Estate & Prediction](https://github.com/jennymai10/melb_realestate)** (Python, Spark, GeoPandas)  
+- **[Melbourne Real Estate & Prediction](https://github.com/jennymaidev/melb_realestate)** (Python, Spark, GeoPandas)  
   Developed a data pipeline to enhance real estate data, engineer livability/affordability indexes, and create predictive models for housing prices and rental trends.
   
-- **[New York Taxi Analysis & Prediction](https://github.com/jennymai10/nyc-taxi-prediction)** (Python, Spark)  
+- **[New York Taxi Analysis & Prediction](https://github.com/jennymaidev/nyc-taxi-prediction)** (Python, Spark)  
   Built predictive models to estimate travel costs with a 94% R-squared accuracy, providing 65% optimized travel recommendations.
 
 ## 🔧 Skills
@@ -30,7 +30,7 @@ I enjoy building scalable web applications, developing data pipelines, and deplo
 - **Tools & Platforms:** Docker, GCP/AWS, Git, CI/CD Pipelines, MySQL, PostgreSQL, Apache Spark, Jupyter Notebook, Google Colab, Kubernetes, Power BI  
 
 ## 📫 Contact
-- **Website:** [jennymai10.github.io](https://jennymai10.github.io)  
-- **GitHub:** [github.com/jennymai10](https://github.com/jennymai10)  
-- **LinkedIn:** [linkedin.com/in/nhumai](https://linkedin.com/in/nhumai)  
-- **Email:** [jennymai10@outlook.com](mailto:jennymai10@outlook.com)
+- **Website:** [jennymaidev.github.io](https://jennymaidev.github.io)  
+- **GitHub:** [github.com/jennymaidev](https://github.com/jennymaidev)  
+- **LinkedIn:** [linkedin.com/in/jennymaidev](https://linkedin.com/in/jennymaidev)  
+- **Email:** [jennymaidev@gmail.com](mailto:jennymaidev@gmail.com)

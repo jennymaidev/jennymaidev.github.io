@@ -12,17 +12,17 @@ function Main() {
       <div className="about-section">
         <div className="content">
           <div className="social_icons">
-            <a href="https://github.com/jennymai10" target="_blank" rel="noreferrer"><GitHubIcon/></a>
-            <a href="https://www.linkedin.com/in/nhumai/" target="_blank" rel="noreferrer"><LinkedInIcon/></a>
-            <a href="mailto:jennymai10@outlook.com" target="_blank" rel="noreferrer"><EmailIcon/></a>
+            <a href="https://github.com/jennymaidev" target="_blank" rel="noreferrer"><GitHubIcon/></a>
+            <a href="https://www.linkedin.com/in/jennymaidev/" target="_blank" rel="noreferrer"><LinkedInIcon/></a>
+            <a href="mailto:jennymaidev@gmail.com" target="_blank" rel="noreferrer"><EmailIcon/></a>
           </div>
           <h1>Jenny Mai</h1>
           <p>Software Engineer</p>
           <button className="button" onClick={() => window.open(resume, '_blank')}>Resume</button>
           <div className="mobile_social_icons">
-            <a href="https://github.com/jennymai10" target="_blank" rel="noreferrer"><GitHubIcon/></a>
-            <a href="https://www.linkedin.com/in/nhumai/" target="_blank" rel="noreferrer"><LinkedInIcon/></a>
-            <a href="mailto:jennymai10@outlook.com" target="_blank" rel="noreferrer"><EmailIcon/></a>
+            <a href="https://github.com/jennymaidev" target="_blank" rel="noreferrer"><GitHubIcon/></a>
+            <a href="https://www.linkedin.com/in/jennymaidev/" target="_blank" rel="noreferrer"><LinkedInIcon/></a>
+            <a href="mailto:jennymaidev@gmail.com" target="_blank" rel="noreferrer"><EmailIcon/></a>
           </div>
         </div>
       </div>
