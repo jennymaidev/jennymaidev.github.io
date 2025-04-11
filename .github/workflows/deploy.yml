@@ -20,6 +20,10 @@ jobs:
 
       - name: Install dependencies
         run: npm install
+      - name: Install pdflatex
+        run: |
+            sudo apt-get update
+            sudo apt-get install -y texlive-latex-base
 
       - name: Download Resume
         run: node src/assets/files/downloadResume.js

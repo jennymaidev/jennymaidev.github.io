@@ -19,7 +19,7 @@ const outputFileName = 'resume.pdf';
 
     // Compile PDF using latexmk
     process.chdir(tempDir);
-    execSync('latexmk -pdf main.tex', { stdio: 'inherit' });
+    execSync('pdflatex -interaction=nonstopmode main.tex', { stdio: 'inherit' });
 
     // Move compiled PDF
     if (!fs.existsSync(outputDir)) fs.mkdirSync(outputDir, { recursive: true });
