@@ -1,0 +1,38 @@
+name: Deploy every 3 days
+
+on:
+  schedule:
+    - cron: '0 0 */3 * *'  # Every 3 days
+  workflow_dispatch:        # Optional manual trigger
+
+jobs:
+  auto-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Download Resume
+        run: node src/assets/files/downloadResume.js
+
+      - name: Deploy to GitHub Pages
+        run: npm run deploy
+        env:
+          CI: true
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Discord Notify
+        if: always()
+        run: |
+          curl -H "Content-Type: application/json" \
+               -d "{\"content\": \"🚀 Deployment Status: ${{ job.status }}\"}" \
+               ${{ secrets.DISCORD_WEBHOOK }}
