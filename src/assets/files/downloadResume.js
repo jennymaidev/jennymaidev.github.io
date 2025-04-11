@@ -12,18 +12,29 @@ const outputDir = __dirname;
 const outputFileName = 'resume.pdf';
 
 (async () => {
-    // Clone Overleaf Repo
+  try {
+    // Cleanup old temp dir
     if (fs.existsSync(tempDir)) fs.rmSync(tempDir, { recursive: true });
+
+    // Clone Overleaf repo
     const git = simpleGit();
     await git.clone(repoUrl, tempDir);
 
-    // Compile PDF using latexmk
+    // Compile LaTeX (twice to resolve references)
     process.chdir(tempDir);
+    execSync('pdflatex -interaction=nonstopmode main.tex', { stdio: 'inherit' });
     execSync('pdflatex -interaction=nonstopmode main.tex', { stdio: 'inherit' });
 
     // Move compiled PDF
-    if (!fs.existsSync(outputDir)) fs.mkdirSync(outputDir, { recursive: true });
-    fs.copyFileSync(path.join(tempDir, 'main.pdf'), path.join(outputDir, outputFileName));
+    const compiledPDF = path.join(tempDir, 'main.pdf');
+    const outputPath = path.join(outputDir, outputFileName);
 
-    console.log(`✅ PDF saved to ${path.join(outputDir, outputFileName)}`);
+    if (!fs.existsSync(compiledPDF)) throw new Error('PDF not generated.');
+
+    fs.copyFileSync(compiledPDF, outputPath);
+    console.log(`✅ PDF saved to ${outputPath}`);
+  } catch (err) {
+    console.error('❌ Failed to generate PDF:', err.message);
+    process.exit(1);
+  }
 })();
