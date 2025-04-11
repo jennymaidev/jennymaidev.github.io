@@ -21,18 +21,18 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      # - name: Install LaTeX with resume dependencies
-      #   run: |
-      #     sudo apt-get update
-      #     sudo apt-get install -y \
-      #       texlive-latex-base \
-      #       texlive-latex-recommended \
-      #       texlive-fonts-recommended \
-      #       texlive-latex-extra \
-      #       texlive-fonts-extra 
+      - name: Install LaTeX with resume dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y \
+            texlive-latex-base \
+            texlive-latex-recommended \
+            texlive-fonts-recommended \
+            texlive-latex-extra \
+            texlive-fonts-extra 
 
-      # - name: Download Resume
-      #   run: node src/assets/files/downloadResume.js
+      - name: Download Resume
+        run: node src/assets/files/downloadResume.js
 
       - name: Deploy to GitHub Pages
         run: npm run deploy
