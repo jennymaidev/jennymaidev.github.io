@@ -36,7 +36,7 @@
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "localdeploy": "gh-pages -d build",
-    "deploy": "gh-pages -d build -u \"github-actions-bot <action@github.com>\""
+    "deploy": "gh-pages -d build -u \"github-actions-bot <action@github.com>\" -r https://git:${GH_TOKEN}@github.com/jennymaidev/jennymaidev.github.io.git"
   },
   "eslintConfig": {
     "extends": [
@@ -65,5 +65,9 @@
     "resolve-url-loader": "^5.0.0",
     "sass": "^1.86.1",
     "sass-loader": "^16.0.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jennymaidev/jennymaidev.github.io.git"
   }
 }
