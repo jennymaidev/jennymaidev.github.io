@@ -16,7 +16,7 @@ function Timeline() {
             className="vertical-timeline-element--work"
             contentStyle={{ background: 'white', color: 'rgb(39, 40, 34)' }}
             contentArrowStyle={{ borderRight: '7px solid  white' }}
-            date="Jan 2025 - Present"
+            date="Jan 2025 - May 2025"
             iconStyle={{ background: '#0d1116', color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faCode} />}
           >
@@ -40,8 +40,8 @@ function Timeline() {
             iconStyle={{ background: '#0d1116', color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faCode} />}
           >
-            <h3 className="vertical-timeline-element-title">Research Assistant | Data Analyst</h3>
-            <h4 className="vertical-timeline-element-subtitle">Center for Health Informatics @ University of Illinois at Urbana-Champaign</h4>
+            <h3 className="vertical-timeline-element-title">Research Assistant | Data Engineering</h3>
+            <h4 className="vertical-timeline-element-subtitle">Illinois Center for Health Informatics</h4>
             <p>Led bilingual vaccine data cleaning and analysis (Python/R), ensuring data integrity across 25,000+ records and delivering vaccine effectiveness insights via EDA and statistical analysis.</p>
           </VerticalTimelineElement>
           <VerticalTimelineElement
@@ -62,7 +62,7 @@ function Timeline() {
           >
             <h3 className="vertical-timeline-element-title">Data Engineer Intern</h3>
             <h4 className="vertical-timeline-element-subtitle">VietAI Research @ San Francisco, CA</h4>
-            <p>Scraped and preprocessed 30,000 medical journals (Selenium), improving NLP translation accuracy by 3.5 BLEU through optimized data pairing and quality controls.</p>
+            <p>Scraped, preprocessed, and text-paired 30,000 medical journals (Selenium), improving NLP translation accuracy by 3.5 BLEU through optimized data pairing and quality controls.</p>
           </VerticalTimelineElement>
         </VerticalTimeline>
       </div>

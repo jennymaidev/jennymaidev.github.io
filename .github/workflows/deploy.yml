@@ -3,7 +3,10 @@ name: Deploy every 3 days
 on:
   schedule:
     - cron: '0 0 */3 * *'  # Every 3 days
-  workflow_dispatch:        # Optional manual trigger
+  workflow_dispatch:
+  push:
+    branches:
+      - master
 
 jobs:
   auto-deploy:
