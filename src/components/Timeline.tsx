@@ -16,6 +16,19 @@ function Timeline() {
             className="vertical-timeline-element--work"
             contentStyle={{ background: 'white', color: 'rgb(39, 40, 34)' }}
             contentArrowStyle={{ borderRight: '7px solid  white' }}
+            date="Jun 2025 - Present"
+            iconStyle={{ background: '#0d1116', color: 'rgb(39, 40, 34)' }}
+            icon={<FontAwesomeIcon icon={faCode} />}
+          >
+            <h3 className="vertical-timeline-element-title">Cloud Engineer Intern</h3>
+            <h4 className="vertical-timeline-element-subtitle">Prolaio @ Chicago, IL</h4>
+            <p>Designed and deployed a GitLab CI/CD pipeline using Python and Docker to cut manual deployment tasks. Led Renovate Bot integration to automate dependency management and authored modular automation scripts for scalable version releases.</p>
+          </VerticalTimelineElement>
+          
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            contentStyle={{ background: 'white', color: 'rgb(39, 40, 34)' }}
+            contentArrowStyle={{ borderRight: '7px solid  white' }}
             date="Jan 2025 - May 2025"
             iconStyle={{ background: '#0d1116', color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faCode} />}
@@ -24,6 +37,7 @@ function Timeline() {
             <h4 className="vertical-timeline-element-subtitle">Bumpups @ Dallas, TX</h4>
             <p>Enhanced model performance and user interactions through DSPy prompt design, integrated advanced prompting into scalable solutions, and achieved 90% prompt output targets by optimizing input data quality.</p>
           </VerticalTimelineElement>
+          
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             date="Aug 2023 - Present"
@@ -34,6 +48,7 @@ function Timeline() {
             <h4 className="vertical-timeline-element-subtitle">Illini Media @ Champaign, IL</h4>
             <p>Optimized publication workflows by 45% and improved system security/efficiency via backend development, role-based access control, and CI/CD pipeline automation.</p>
           </VerticalTimelineElement>
+          
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             date="Aug 2023 - Present"
@@ -44,6 +59,7 @@ function Timeline() {
             <h4 className="vertical-timeline-element-subtitle">Illinois Center for Health Informatics</h4>
             <p>Led bilingual vaccine data cleaning and analysis (Python/R), ensuring data integrity across 25,000+ records and delivering vaccine effectiveness insights via EDA and statistical analysis.</p>
           </VerticalTimelineElement>
+          
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             date="Jul 2024 - Dec 2024"
@@ -54,6 +70,7 @@ function Timeline() {
             <h4 className="vertical-timeline-element-subtitle">C-Lara Lab @ University of Melbourne, Australia</h4>
             <p>Led a 5-member Agile team to develop a Chain of Thought web application, delivering a scalable Django/PostgreSQL backend with React.js UI, automating deployment on Google Cloud via CI/CD pipelines (85% reduction in manual effort), and enhancing AI performance through prompt engineering.</p>
           </VerticalTimelineElement>
+          
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             date="Jun 2021 - Mar 2022"
@@ -64,6 +81,7 @@ function Timeline() {
             <h4 className="vertical-timeline-element-subtitle">VietAI Research @ San Francisco, CA</h4>
             <p>Scraped, preprocessed, and text-paired 30,000 medical journals (Selenium), improving NLP translation accuracy by 3.5 BLEU through optimized data pairing and quality controls.</p>
           </VerticalTimelineElement>
+          
         </VerticalTimeline>
       </div>
     </div>
