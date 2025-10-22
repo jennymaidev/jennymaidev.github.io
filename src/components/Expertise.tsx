@@ -24,8 +24,8 @@ function Expertise() {
             <h1>Education</h1>
             <div className="education-grid">
                 <div className="education-item">
-                    <h4>B.S. in Data Science & Information Sciences (CS Minor) @ University of Illinois Urbana-Champaign</h4>
-                    <p>GPA: 3.9/4.0 | Exchange: University of Melbourne (2024) & Nanyang Technological University (2025)</p>
+                    <h4>Data Science & Computer Science Bachelor @ University of Illinois Urbana-Champaign</h4>
+                    <p>Exchange: University of Melbourne (2024) & Nanyang Technological University (2025)</p>
                     <p>Honors: James Scholar, UIUC iSchool Scholarship, and UIUC International Student Tuition Scholarship</p>
                 </div>
             </div>
