@@ -21,8 +21,8 @@ function Timeline() {
             icon={<FontAwesomeIcon icon={faCode} />}
           >
             <h3 className="vertical-timeline-element-title">Cloud Engineer Intern</h3>
-            <h4 className="vertical-timeline-element-subtitle">Prolaio @ Chicago, IL</h4>
-            <p>Designed and deployed a GitLab CI/CD pipeline using Python and Docker to cut manual deployment tasks. Led Renovate Bot integration to automate dependency management and authored modular automation scripts for scalable version releases.</p>
+            <h4 className="vertical-timeline-element-subtitle">Prolaio | Cloud Integration Team @ Chicago, IL</h4>
+            <p>• Deployed a CI/CD pipeline to automate dependency & microservice updates, cutting manual deployment tasks by 80%.<br />• Implemented dedicated Kafka sinks for various data objects and engineered real-time broadcast metrics using Micrometer's TimerFactory for granular data streaming monitoring.<br />• Integrated Renovate across repositories to automate dependency management, enhancing security and service reliability.</p>
           </VerticalTimelineElement>
           
           <VerticalTimelineElement
@@ -34,19 +34,19 @@ function Timeline() {
             icon={<FontAwesomeIcon icon={faCode} />}
           >
             <h3 className="vertical-timeline-element-title">Software Engineer Intern</h3>
-            <h4 className="vertical-timeline-element-subtitle">Bumpups @ Dallas, TX</h4>
-            <p>Enhanced model performance and user interactions through DSPy prompt design, integrated advanced prompting into scalable solutions, and achieved 90% prompt output targets by optimizing input data quality.</p>
+            <h4 className="vertical-timeline-element-subtitle">Bumpups | Prompt Engineering Team @ Dallas, TX</h4>
+            <p>• Designed & optimized prompts using DSPy to improve LLM fine-tuning efficiency & model performance across use cases.<br />• Developed data preprocessing pipelines and evaluation scripts, achieving 90% alignment with targeted output behaviors.</p>
           </VerticalTimelineElement>
           
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="Aug 2023 - Present"
+            date="Aug 2023 - Jun 2025"
             iconStyle={{ background: '#0d1116', color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faCode} />}
           >
             <h3 className="vertical-timeline-element-title">Software Engineer Intern</h3>
             <h4 className="vertical-timeline-element-subtitle">Illini Media @ Champaign, IL</h4>
-            <p>Optimized publication workflows by 45% and improved system security/efficiency via backend development, role-based access control, and CI/CD pipeline automation.</p>
+            <p>• Developed backend systems, optimizing database operations & pipelines to improve publication efficiency by 45%.<br />• Implemented role-based access controls and security protocols to ensure data integrity and platform security.</p>
           </VerticalTimelineElement>
           
           <VerticalTimelineElement
@@ -55,9 +55,9 @@ function Timeline() {
             iconStyle={{ background: '#0d1116', color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faCode} />}
           >
-            <h3 className="vertical-timeline-element-title">Research Assistant | Data Engineering</h3>
-            <h4 className="vertical-timeline-element-subtitle">Illinois Center for Health Informatics</h4>
-            <p>Led bilingual vaccine data cleaning and analysis (Python/R), ensuring data integrity across 25,000+ records and delivering vaccine effectiveness insights via EDA and statistical analysis.</p>
+            <h3 className="vertical-timeline-element-title">Research Assistant - Data Engineering</h3>
+            <h4 className="vertical-timeline-element-subtitle">UIUC iSchool Research @ Champaign, IL</h4>
+            <p>• Engineered data integrity pipelines for 25,000+ bilingual patient records using Python & R, conducting statistical analysis to generate novel insights into Pneumococcal Vaccine effectiveness.<br />• Developed a novel Generative AI tool to automate PEMAT (Patient Education Materials Assessment Tool) evaluations; rigorously validated by scraping archived web data and replicating peer-reviewed studies for performance analysis.</p>
           </VerticalTimelineElement>
           
           <VerticalTimelineElement
@@ -66,9 +66,9 @@ function Timeline() {
             iconStyle={{ background: '#0d1116', color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faCode} />}
           >
-            <h3 className="vertical-timeline-element-title">Project Manager & Fullstack Intern</h3>
+            <h3 className="vertical-timeline-element-title">Research Assistant - Project Manager & Fullstack Developer</h3>
             <h4 className="vertical-timeline-element-subtitle">C-Lara Lab @ University of Melbourne, Australia</h4>
-            <p>Led a 5-member Agile team to develop a Chain of Thought web application, delivering a scalable Django/PostgreSQL backend with React.js UI, automating deployment on Google Cloud via CI/CD pipelines (85% reduction in manual effort), and enhancing AI performance through prompt engineering.</p>
+            <p>• Led a 5-member Agile team to architect a full-stack web application (Django, PostgreSQL, React) for reinforcement learning, utilizing prompt engineering to drive AI Chain of Thought reasoning.<br />• Engineered a robust CI/CD pipeline for automated deployment to GCP, reducing manual effort by 85%.</p>
           </VerticalTimelineElement>
           
           <VerticalTimelineElement
@@ -79,7 +79,7 @@ function Timeline() {
           >
             <h3 className="vertical-timeline-element-title">Data Engineer Intern</h3>
             <h4 className="vertical-timeline-element-subtitle">VietAI Research @ San Francisco, CA</h4>
-            <p>Scraped, preprocessed, and text-paired 30,000 medical journals (Selenium), improving NLP translation accuracy by 3.5 BLEU through optimized data pairing and quality controls.</p>
+            <p>• Scraped and preprocessed 30,000 medical journals using Selenium, boosting NLP model accuracy by +3.5 BLEU.<br />• Optimized data pairing with quality controls, enhancing English-Vietnamese translation performance.</p>
           </VerticalTimelineElement>
           
         </VerticalTimeline>

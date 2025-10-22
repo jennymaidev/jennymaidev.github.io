@@ -6,15 +6,15 @@ import Chip from '@mui/material/Chip';
 import '../assets/styles/Expertise.scss';
 
 const labelsFirst = [
-    "JavaScript", "Next.js", "TypeScript", "React", "Django", "Flask", "Node.js", "PostgreSQL", "MySQL", "HTML/CSS"
+    "JavaScript", "React.js", "Node.js", "Django", "Flask", "PostgreSQL", "MySQL", "HTML/CSS", "Java", "Kotlin", "C++", "Unity"
 ];
 
 const labelsSecond = [
-    "Python", "Apache Spark", "SQL", "Pandas", "NumPy", "Matplotlib", "Seaborn", "Plotly", "GeoPandas"
+    "Python", "Apache Spark", "SQL", "Pandas", "NumPy", "Matplotlib", "PyTorch", "BigQuery", "Power BI", "Apache Kafka"
 ];
 
 const labelsThird = [
-    "Docker", "Git", "GitHub Actions", "GCP/AWS", "Linux", "CI/CD Pipelines"
+    "Docker", "Kubernetes", "Google Cloud", "CI/CD", "Terraform IaC", "Git"
 ];
 
 function Expertise() {
@@ -24,9 +24,9 @@ function Expertise() {
             <h1>Education</h1>
             <div className="education-grid">
                 <div className="education-item">
-                    <h4>Data Science & Computer Science @ University of Illinois Urbana-Champaign</h4>
-                    <p>Exchange: University of Melbourne (2024) & Nanyang Technological University (2025)</p>
-                    <p>James Scholar & iSchool Scholarship Recipient</p>
+                    <h4>B.S. in Data Science & Information Sciences (CS Minor) @ University of Illinois Urbana-Champaign</h4>
+                    <p>GPA: 3.9/4.0 | Exchange: University of Melbourne (2024) & Nanyang Technological University (2025)</p>
+                    <p>Honors: James Scholar, UIUC iSchool Scholarship, and UIUC International Student Tuition Scholarship</p>
                 </div>
             </div>
 
