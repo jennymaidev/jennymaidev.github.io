@@ -6,6 +6,7 @@ import '../assets/styles/Project.scss';
 function Project() {
     return(
     <div className="projects-container" id="projects">
+        {/* # NOT-HIRING
         <h1>Projects</h1>
         <div className="projects-grid">
             <div className="project">
@@ -15,9 +16,9 @@ function Project() {
                 <a href="https://github.com/jennymaidev/melb_realestate" target="_blank" rel="noreferrer">
                     <h2>Melbourne Real Estate</h2>
                 </a>
-                {/* <p>
+                <p>
                     Developed a Python/Spark pipeline to enhance real estate data with geospatial metrics, generate livability/affordability indexes, and create predictive models for housing prices and rental trends.
-                </p> */}
+                </p>
             </div>
 
             <div className="project">
@@ -27,11 +28,12 @@ function Project() {
                 <a href="https://github.com/jennymaidev/nyc-taxi-prediction" target="_blank" rel="noreferrer">
                     <h2>New York Taxi Price</h2>
                 </a>
-                {/* <p>
+                <p>
                 Used Spark to analyze NYC taxi data, build predictive models (94% R-squared, $3.80 error) for travel cost, and provide 65% cost/time optimized travel recommendations.
-                </p> */}
+                </p>
             </div>
         </div>
+        */}
     </div>
     );
 }

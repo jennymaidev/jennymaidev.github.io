@@ -30,16 +30,17 @@ function Expertise() {
                 </div>
             </div>
 
+            {/* # NOT-HIRING
             <h1>Skills</h1>
             <div className="skills-grid">
                 <div className="skill">
                     <FontAwesomeIcon icon={faReact} size="3x"/>
                     <h3>Software Development</h3>
-                    {/* <p> # NOT-HIRING
+                    <p>
                     I create scalable web applications with a focus on efficient backend systems and intuitive frontend interfaces. My work emphasizes secure access controls and optimized database operations, leading to enhanced application performance.
-                    </p> */}
+                    </p>
                     <div className="flex-chips">
-                        {/* <span className="chip-title">Tech stack:</span> */}
+                        <span className="chip-title">Tech stack:</span>
                         {labelsFirst.map((label, index) => (
                             <Chip key={index} className='chip' label={label} />
                         ))}
@@ -49,11 +50,11 @@ function Expertise() {
                 <div className="skill">
                     <FontAwesomeIcon icon={faPython} size="3x"/>
                     <h3>Data Engineering & Machine Learning</h3>
-                    {/* <p> # NOT-HIRING
+                    <p>
                     I transform raw data into valuable insights through rigorous data engineering and predictive modeling. My expertise includes handling large datasets and ensuring data integrity for informed decision-making.
-                    </p> */}
+                    </p>
                     <div className="flex-chips">
-                        {/* <span className="chip-title">Tech stack:</span> */}
+                        <span className="chip-title">Tech stack:</span>
                         {labelsSecond.map((label, index) => (
                             <Chip key={index} className='chip' label={label} />
                         ))}
@@ -63,17 +64,18 @@ function Expertise() {
                 <div className="skill">
                     <FontAwesomeIcon icon={faDocker} size="3x"/>
                     <h3>DevOps & Automation</h3>
-                    {/* <p> # NOT-HIRING
+                    <p>
                     I streamline development workflows using robust DevOps practices and automated deployment pipelines. I implement CI/CD, containerization, and cloud solutions to ensure efficient and reliable software delivery.
-                    </p> */}
+                    </p>
                     <div className="flex-chips">
-                        {/* <span className="chip-title">Tech stack:</span> */}
+                        <span className="chip-title">Tech stack:</span>
                         {labelsThird.map((label, index) => (
                             <Chip key={index} className='chip' label={label} />
                         ))}
                     </div>
                 </div>
             </div>
+            */}
         </div>
     </div>
     );

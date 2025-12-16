@@ -18,7 +18,7 @@ function Main() {
           </div>
           <h1>Jenny Mai</h1>
           <p>Cloud Software Engineer</p>
-          <button className="button" onClick={() => window.open(resume, '_blank')}>Resume</button>
+          {/* # NOT-HIRING <button className="button" onClick={() => window.open(resume, '_blank')}>Resume</button> */}
           <div className="mobile_social_icons">
             <a href="https://github.com/jennymaidev" target="_blank" rel="noreferrer"><GitHubIcon/></a>
             <a href="https://www.linkedin.com/in/jennymaidev/" target="_blank" rel="noreferrer"><LinkedInIcon/></a>
