@@ -17,7 +17,7 @@ function Main() {
             <a href="mailto:jennymaidev@gmail.com" target="_blank" rel="noreferrer"><EmailIcon/></a>
           </div>
           <h1>Jenny Mai</h1>
-          <p>Software Engineer</p>
+          <p>Cloud Software Engineer</p>
           <button className="button" onClick={() => window.open(resume, '_blank')}>Resume</button>
           <div className="mobile_social_icons">
             <a href="https://github.com/jennymaidev" target="_blank" rel="noreferrer"><GitHubIcon/></a>

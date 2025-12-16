@@ -24,9 +24,9 @@ function Expertise() {
             <h1>Education</h1>
             <div className="education-grid">
                 <div className="education-item">
-                    <h4>Data Science & Computer Science Bachelor @ University of Illinois Urbana-Champaign</h4>
-                    <p>Exchange: University of Melbourne (2024) & Nanyang Technological University (2025)</p>
-                    <p>Honors: James Scholar, UIUC iSchool Scholarship, and UIUC International Student Tuition Scholarship</p>
+                    <h4>Data Science & Computer Science @ University of Illinois Urbana-Champaign</h4>
+                    <p>University of Melbourne (2024 Exchange) & Nanyang Technological University (2025 Exchange)</p>
+                    <p>James Scholar, UIUC iSchool Scholarship, and UIUC International Student Tuition Scholarship</p>
                 </div>
             </div>
 
@@ -35,9 +35,9 @@ function Expertise() {
                 <div className="skill">
                     <FontAwesomeIcon icon={faReact} size="3x"/>
                     <h3>Software Development</h3>
-                    <p>
+                    {/* <p> # NOT-HIRING
                     I create scalable web applications with a focus on efficient backend systems and intuitive frontend interfaces. My work emphasizes secure access controls and optimized database operations, leading to enhanced application performance.
-                    </p>
+                    </p> */}
                     <div className="flex-chips">
                         {/* <span className="chip-title">Tech stack:</span> */}
                         {labelsFirst.map((label, index) => (
@@ -49,9 +49,9 @@ function Expertise() {
                 <div className="skill">
                     <FontAwesomeIcon icon={faPython} size="3x"/>
                     <h3>Data Engineering & Machine Learning</h3>
-                    <p>
+                    {/* <p> # NOT-HIRING
                     I transform raw data into valuable insights through rigorous data engineering and predictive modeling. My expertise includes handling large datasets and ensuring data integrity for informed decision-making.
-                    </p>
+                    </p> */}
                     <div className="flex-chips">
                         {/* <span className="chip-title">Tech stack:</span> */}
                         {labelsSecond.map((label, index) => (
@@ -63,9 +63,9 @@ function Expertise() {
                 <div className="skill">
                     <FontAwesomeIcon icon={faDocker} size="3x"/>
                     <h3>DevOps & Automation</h3>
-                    <p>
+                    {/* <p> # NOT-HIRING
                     I streamline development workflows using robust DevOps practices and automated deployment pipelines. I implement CI/CD, containerization, and cloud solutions to ensure efficient and reliable software delivery.
-                    </p>
+                    </p> */}
                     <div className="flex-chips">
                         {/* <span className="chip-title">Tech stack:</span> */}
                         {labelsThird.map((label, index) => (

@@ -1,15 +1,49 @@
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes heartbeat {
+    0%, 100% {
+        transform: scale(1);
+    }
+    10%, 30% {
+        transform: scale(1.2);
+    }
+    20%, 40% {
+        transform: scale(1);
+    }
+}
+
 footer {
     text-align: center;
     padding-top: 50px;
     padding-bottom: 50px;
+    animation: fadeIn 0.8s ease-out;
 
     svg {
         width: 1.1em !important;
         height: 1.1em !important;
         margin-right: 10px;
+        animation: heartbeat 2s ease-in-out infinite;
     }
 
     p {
         font-size: 0.8em;
+        letter-spacing: 0.5px;
+    }
+}
+
+.light-mode footer {
+    color: #0d1116;
+    
+    p {
+        color: #0d1116;
     }
 }

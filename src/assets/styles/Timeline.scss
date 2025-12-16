@@ -3,6 +3,47 @@
     font-family: 'Courier Prime', monospace;
 }
 
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.items-container h1 {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+    animation: fadeInUp 0.8s ease-out;
+    
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 60px;
+        height: 4px;
+        background: white;
+        animation: slideInLeft 0.6s ease-out 0.3s backwards;
+    }
+}
+
 .vertical-timeline p {
     color: rgb(39, 40, 34);
 }
@@ -17,6 +58,61 @@
 
 .vertical-timeline-element h4 {
     color: rgb(39, 40, 34);
+}
+
+.vertical-timeline-element h4 {
+    font-weight: 400;
+}
+
+.vertical-timeline-element h4 a {
+    color: #6B5344;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    position: relative;
+    padding-bottom: 2px;
+    
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background: #6B5344;
+        transition: width 0.3s ease;
+    }
+    
+    &:hover::after {
+        width: 100%;
+    }
+}
+
+.vertical-timeline-element h4 a:hover {
+    transform: translateX(3px);
+    letter-spacing: 0.5px;
+}
+
+.light-mode {
+    .items-container h1::after {
+        background: #0d1116;
+    }
+    
+    .vertical-timeline::before {
+        background: #0d1116;
+    }
+    
+    .vertical-timeline-element h4 a {
+        color: #6B5344;
+        
+        &::after {
+            background: #6B5344;
+        }
+        
+        &:hover {
+            color: #6B5344;
+        }
+    }
 }
 
 .vertical-timeline-element span {

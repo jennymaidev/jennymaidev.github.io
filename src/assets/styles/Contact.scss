@@ -46,3 +46,25 @@ form {
   width: 100% !important;
   margin-bottom: 15px !important;
 }
+
+.light-mode {
+  .contact-form {
+    button {
+      background-color: #0d1116;
+      color: white;
+    }
+
+    button:hover {
+      background-color: #5000ca;
+      color: white;
+    }
+
+    fieldset {
+      background-color: white;
+    }
+  }
+  
+  label {
+    color: #0d1116;
+  }
+}

@@ -30,7 +30,7 @@ I enjoy building scalable web applications, developing data pipelines, and deplo
 - **Tools & Platforms:** Docker, GCP/AWS, Git, CI/CD Pipelines, MySQL, PostgreSQL, Apache Spark, Jupyter Notebook, Google Colab, Kubernetes, Power BI  
 
 ## 📫 Contact
-- **Website:** [jennymaidev.github.io](https://jennymaidev.github.io)  
+- **Website:** [jennymai.us](https://jennymai.us)  
 - **GitHub:** [github.com/jennymaidev](https://github.com/jennymaidev)  
 - **LinkedIn:** [linkedin.com/in/jennymaidev](https://linkedin.com/in/jennymaidev)  
 - **Email:** [jennymaidev@gmail.com](mailto:jennymaidev@gmail.com)
