@@ -80,5 +80,3 @@ git add .
 git commit -m "Revert to hiring mode - show all sections"
 git push origin master
 ```
-
-The GitHub Actions workflow will automatically deploy your changes to [jennymai.us](https://jennymai.us).
