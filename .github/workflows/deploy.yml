@@ -23,6 +23,11 @@ jobs:
 
       - name: Install dependencies
         run: npm install
+      
+      - name: Generate Daily Project with Gemini
+        run: node src/assets/files/generateDailyProject.mjs
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
 
       - name: Install LaTeX with resume dependencies
         run: |

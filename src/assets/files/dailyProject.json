@@ -1,0 +1,5 @@
+{
+  "projectName": "Quantum Coffee Scheduler",
+  "techStack": ["React", "TypeScript", "Node.js", "AI"],
+  "problemSolved": "Uses AI and LIDAR to optimize coffee sip cadence via blockchain."
+}
