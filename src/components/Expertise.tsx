@@ -1,8 +1,10 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import React from "react";
 import '@fortawesome/free-regular-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faReact, faDocker, faPython } from '@fortawesome/free-brands-svg-icons';
 import Chip from '@mui/material/Chip';
+import { useLookingForWork } from '../hooks/useLookingForWork';
 import '../assets/styles/Expertise.scss';
 
 const labelsFirst = [
@@ -18,6 +20,7 @@ const labelsThird = [
 ];
 
 function Expertise() {
+    const lookingForWork = useLookingForWork();
     return (
     <div className="container" id="expertise">
         <div className="skills-container">
@@ -30,7 +33,8 @@ function Expertise() {
                 </div>
             </div>
 
-            {/* # NOT-HIRING
+            {lookingForWork && (
+            <>
             <h1>Skills</h1>
             <div className="skills-grid">
                 <div className="skill">
@@ -75,7 +79,8 @@ function Expertise() {
                     </div>
                 </div>
             </div>
-            */}
+            </>
+            )}
         </div>
     </div>
     );

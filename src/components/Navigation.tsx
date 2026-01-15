@@ -15,13 +15,17 @@ import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
 import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
+import { useLookingForWork } from '../hooks/useLookingForWork';
 
 const drawerWidth = 240;
-const navItems = [['Background', 'expertise'], ['Experience', 'history']]; // # NOT-HIRING ['Projects', 'projects'], ['Contact', 'contact']
 
 function Navigation({parentToChild, modeChange}: any) {
-
-  const {mode} = parentToChild;
+  const { mode } = parentToChild;
+  const lookingForWork = useLookingForWork();
+  const baseItems = [['Background', 'expertise'], ['Experience', 'history']];
+  const navItems = lookingForWork 
+    ? [...baseItems, ['Projects', 'projects']]
+    : baseItems;
 
   const [mobileOpen, setMobileOpen] = useState<boolean>(false);
   const [scrolled, setScrolled] = useState<boolean>(false);

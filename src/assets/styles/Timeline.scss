@@ -65,7 +65,7 @@
 }
 
 .vertical-timeline-element h4 a {
-    color: #6B5344;
+    color: #1e88e5;
     text-decoration: none;
     font-weight: 600;
     transition: all 0.3s ease;
@@ -79,7 +79,7 @@
         left: 0;
         width: 0;
         height: 2px;
-        background: #6B5344;
+        background: #1e88e5;
         transition: width 0.3s ease;
     }
     
@@ -103,14 +103,28 @@
     }
     
     .vertical-timeline-element h4 a {
-        color: #6B5344;
+        color: #1e88e5;
         
         &::after {
-            background: #6B5344;
+            background: #1e88e5;
         }
         
         &:hover {
-            color: #6B5344;
+            color: #1e88e5;
+        }
+    }
+}
+
+.dark-mode {
+    .vertical-timeline-element h4 a {
+        color: #1e88e5;
+        
+        &::after {
+            background: #1e88e5;
+        }
+        
+        &:hover {
+            color: #1e88e5;
         }
     }
 }

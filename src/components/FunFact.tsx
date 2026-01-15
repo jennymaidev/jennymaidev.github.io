@@ -27,7 +27,7 @@ function FunFact() {
       </div>
       <div className="fun-fact-container">
         <div className="fun-fact-content">
-          <h2>Quick Stats</h2>
+          <h2>Tidbits</h2>
           <p>
             I’ve touched down in 🇻🇳 🇸🇬 🇦🇺 🇰🇷 🇨🇳 🇹🇭 🇰🇭 🇫🇮 🇩🇪 🇫🇷 🇨🇿 🇪🇪 🇨🇭 🇩🇰 🇸🇪 🇺🇸, more to add soon...
             I’m speaking 3.5 languages (the 0.5 to account for the days I forget how to form sentences).

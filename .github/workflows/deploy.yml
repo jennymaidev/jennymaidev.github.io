@@ -47,6 +47,7 @@ jobs:
         env:
           CI: true
           GH_TOKEN: ${{ secrets.GH_PAGES_PAT }}
+          REACT_APP_LOOKING_FOR_WORK: ${{ secrets.LOOKING_FOR_WORK_MODE }}
 
       - name: Discord Notify
         if: always()

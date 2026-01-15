@@ -1,12 +1,16 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import React from "react";
 import mock04 from '../assets/images/mock04.png';
 import mock05 from '../assets/images/mock05.png';
+import { useLookingForWork } from '../hooks/useLookingForWork';
 import '../assets/styles/Project.scss';
 
 function Project() {
+    const lookingForWork = useLookingForWork();
     return(
     <div className="projects-container" id="projects">
-        {/* # NOT-HIRING
+        {lookingForWork && (
+        <>
         <h1>Projects</h1>
         <div className="projects-grid">
             <div className="project">
@@ -33,7 +37,8 @@ function Project() {
                 </p>
             </div>
         </div>
-        */}
+        </>
+        )}
     </div>
     );
 }

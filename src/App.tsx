@@ -4,6 +4,7 @@ import {
   Timeline,
   Expertise,
   Project,
+    FunFact,
 //   Contact,
   Navigation,
   Footer,
@@ -31,6 +32,7 @@ function App() {
         <Navigation parentToChild={{mode}} modeChange={handleModeChange}/>
         <FadeIn transitionDuration={700}>
             <Main/>
+            <FunFact/>
             <Expertise/>
             <Timeline/>
             <Project/>

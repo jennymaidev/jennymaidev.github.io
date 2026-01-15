@@ -1,11 +1,14 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import React from "react";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailIcon from '@mui/icons-material/Email';
+import { useLookingForWork } from '../hooks/useLookingForWork';
 import '../assets/styles/Main.scss';
 // import resume from '../assets/files/resume.pdf';
 function Main() {
   const resume = require('../assets/files/resume.pdf');
+  const lookingForWork = useLookingForWork();
 
   return (
     <div className="container">
@@ -18,7 +21,7 @@ function Main() {
           </div>
           <h1>Jenny Mai</h1>
           <p>Cloud Engineer</p>
-          {/* # NOT-HIRING <button className="button" onClick={() => window.open(resume, '_blank')}>Resume</button> */}
+          {lookingForWork && <button className="button" onClick={() => window.open(resume, '_blank')}>Resume</button>}
           <div className="mobile_social_icons">
             <a href="https://github.com/jennymaidev" target="_blank" rel="noreferrer"><GitHubIcon/></a>
             <a href="https://www.linkedin.com/in/jennymaidev/" target="_blank" rel="noreferrer"><LinkedInIcon/></a>
