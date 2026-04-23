@@ -7,8 +7,8 @@ import { useLookingForWork } from '../hooks/useLookingForWork';
 import '../assets/styles/Main.scss';
 // import resume from '../assets/files/resume.pdf';
 function Main() {
-  const resume = require('../assets/files/resume.pdf');
   const lookingForWork = useLookingForWork();
+  const resume = process.env.REACT_APP_LOOKING_FOR_WORK === 'true' ? require('../assets/files/resume.pdf') : null;
 
   return (
     <div className="container">
