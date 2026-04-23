@@ -11,6 +11,8 @@ on:
 jobs:
   auto-deploy:
     runs-on: ubuntu-latest
+    env:
+      LOOKING_FOR_WORK: ${{ secrets.LOOKING_FOR_WORK_MODE }}
 
     steps:
       - name: Checkout code
@@ -30,6 +32,7 @@ jobs:
           GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
 
       - name: Install LaTeX with resume dependencies
+        if: env.LOOKING_FOR_WORK == 'true'
         run: |
           sudo apt-get update
           sudo apt-get install -y \
@@ -37,10 +40,13 @@ jobs:
             texlive-latex-recommended \
             texlive-fonts-recommended \
             texlive-latex-extra \
-            texlive-fonts-extra 
+            texlive-fonts-extra
 
       - name: Download Resume
+        if: env.LOOKING_FOR_WORK == 'true'
         run: node src/assets/files/downloadResume.js
+        env:
+          OVERLEAF_TOKEN: ${{ secrets.OVERLEAF_TOKEN }}
 
       - name: Deploy to GitHub Pages
         run: npm run deploy

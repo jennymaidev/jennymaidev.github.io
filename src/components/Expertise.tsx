@@ -6,6 +6,10 @@ import { faReact, faDocker, faPython } from '@fortawesome/free-brands-svg-icons'
 import Chip from '@mui/material/Chip';
 import { useLookingForWork } from '../hooks/useLookingForWork';
 import '../assets/styles/Expertise.scss';
+import uiucLogo from '../assets/images/uiuc.png';
+import unimelbLogo from '../assets/images/unimelb.jpg';
+import nanyangLogo from '../assets/images/nanyang.png';
+import ssaLogo from '../assets/images/ssa.png';
 
 const labelsFirst = [
     "JavaScript", "React.js", "Node.js", "Django", "Flask", "PostgreSQL", "MySQL", "HTML/CSS", "Java", "Kotlin", "C++", "Unity"
@@ -27,9 +31,32 @@ function Expertise() {
             <h1>Education</h1>
             <div className="education-grid">
                 <div className="education-item">
-                    <h4>Data Science & Computer Science @ University of Illinois Urbana-Champaign</h4>
-                    <p>University of Melbourne (2024 Exchange) & Nanyang Technological University (2025 Exchange)</p>
-                    <p>James Scholar, UIUC iSchool Scholarship, and UIUC International Student Tuition Scholarship</p>
+                    <img src={uiucLogo} alt="UIUC" className="education-logo" />
+                    <div className="education-text">
+                        <h4>Data Science & Computer Science @ University of Illinois Urbana-Champaign</h4>
+                        <p>James Scholar, UIUC iSchool Scholarship, and UIUC International Student Tuition Scholarship</p>
+                    </div>
+                </div>
+                <div className="education-item">
+                    <img src={nanyangLogo} alt="NTU" className="education-logo" />
+                    <div className="education-text">
+                        <h4>Computer Science @ Nanyang Technological University</h4>
+                        <p>Exchange 2025</p>
+                    </div>
+                </div>
+                <div className="education-item">
+                    <img src={unimelbLogo} alt="University of Melbourne" className="education-logo" />
+                    <div className="education-text">
+                        <h4>Computer Science @ University of Melbourne</h4>
+                        <p>Exchange 2024</p>
+                    </div>
+                </div>
+                <div className="education-item">
+                    <img src={ssaLogo} alt="Shady Side Academy" className="education-logo" />
+                    <div className="education-text">
+                        <h4>Shady Side Academy</h4>
+                        <p>High School</p>
+                    </div>
                 </div>
             </div>
 

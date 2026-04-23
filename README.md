@@ -6,15 +6,17 @@ Welcome to my personal website! This site serves as a showcase of my skills, pro
 Visit: [jennymaidev.github.io](https://jennymaidev.github.io)
 
 ## 📋 About Me
-I am a Data Science & Computer Science undergraduate at the **University of Illinois Urbana-Champaign** (Aug 2022 – May 2026), currently participating in exchange studies at **University of Melbourne** and **Nanyang Technological University** (2024 - 2025). I am a **James Scholar** and recipient of the **UIUC iSchool Scholarship**.
+I am a Data Science & Computer Science graduate from the **University of Illinois Urbana-Champaign** (Aug 2022 – May 2026), with exchange studies at **University of Melbourne** (2024) and **Nanyang Technological University** (2025). I am a **James Scholar** and recipient of the **UIUC iSchool Scholarship** and **UIUC International Student Tuition Scholarship**.
 
-I enjoy building scalable web applications, developing data pipelines, and deploying solutions through robust DevOps practices. 
+I enjoy building scalable web applications, developing data pipelines, and deploying solutions through robust DevOps practices.
 
 ## 💼 Experience
-- **Software Engineer Intern** - Bumpups (Jan 2025 – Present, Remote)
-- **Software Engineer Intern** - Illini Media (Aug 2023 – Present, Champaign, IL)
-- **Project Manager & Fullstack Developer Intern** - University of Melbourne C-Lara Lab (Jul 2024 – Dec 2024, Melbourne, AU)
-- **Research Assistant - Data Analyst** - UIUC Center for Health Informatics (Aug 2023 – Present)
+- **Cloud Engineer** - Prolaio (Jan 2026 – Present, Chicago, IL)
+- **Cloud Engineer Intern** - Prolaio (Jun 2025 – Dec 2025, Chicago, IL)
+- **Software Engineer Intern** - Bumpups (Jan 2025 – May 2025, Remote)
+- **Software Engineer Intern** - Illini Media (Aug 2023 – Jun 2025, Champaign, IL)
+- **Research Assistant - Data Engineering** - UIUC iSchool (Aug 2023 – May 2025, Champaign, IL)
+- **Project Manager & Fullstack Developer** - University of Melbourne C-Lara Lab (Jul 2024 – Dec 2024, Melbourne, AU)
 - **Data Engineer Intern** - VietAI Research (Jun 2021 – Mar 2022, San Francisco, CA)
 
 ## 💡 Projects
@@ -39,44 +41,26 @@ I enjoy building scalable web applications, developing data pipelines, and deplo
 
 ## 🔄 Switching Between Hiring and Non-Hiring Mode
 
-This website has sections that can be toggled on/off when actively job searching. All commented-out sections are tagged with `# NOT-HIRING` for easy searching.
+Hiring mode is controlled by a single environment variable. It shows/hides the Skills section, Projects section, job description bullet points in Experience, Resume button, and Projects nav item.
 
-### 📍 To Revert to HIRING Mode (Show All Content)
+### 📍 Local Development
 
-Search for `# NOT-HIRING` across the codebase and uncomment the following:
-
-1. **Skills Section** - `src/components/Expertise.tsx`
-   - Uncomment lines containing the entire Skills grid (Software Development, Data Engineering & Machine Learning, DevOps & Automation)
-   - This includes the `<h1>Skills</h1>` header and all three skill cards with icons and tech stack chips
-
-2. **Projects Section** - `src/components/Project.tsx`
-   - Uncomment the entire projects grid including:
-     - `<h1>Projects</h1>` header
-     - Melbourne Real Estate project card
-     - New York Taxi Price project card
-
-3. **Resume Button** - `src/components/Main.tsx`
-   - Uncomment the Resume button:
-     ```tsx
-     <button className="button" onClick={() => window.open(resume, '_blank')}>Resume</button>
-     ```
-
-4. **Navigation Bar** - `src/components/Navigation.tsx`
-   - Update the `navItems` array to include Projects:
-     ```tsx
-     const navItems = [['Background', 'expertise'], ['Experience', 'history'], ['Projects', 'projects']];
-     ```
-
-### ✅ Quick Steps:
-1. Use your editor's search function (Cmd/Ctrl + Shift + F) to find all instances of `# NOT-HIRING`
-2. Uncomment each section found (typically 4 locations)
-3. Save all files
-4. Test locally with `npm start`
-5. Commit and push changes to deploy
-
-### 🚀 Deploy Changes:
-```bash
-git add .
-git commit -m "Revert to hiring mode - show all sections"
-git push origin master
+In `.env.local`, set:
 ```
+REACT_APP_LOOKING_FOR_WORK=true   # hiring mode
+REACT_APP_LOOKING_FOR_WORK=false  # not hiring
+```
+
+Restart `npm start` after changing this — CRA bakes env vars at startup.
+
+### 🚀 Production (GitHub Actions)
+
+Set the `LOOKING_FOR_WORK_MODE` GitHub secret to `true` or `false`. The deploy workflow reads from it automatically.
+
+### 📄 Resume (hiring mode only)
+
+The resume is auto-compiled from Overleaf during deployment. To enable:
+1. Generate a Git token in Overleaf → Account Settings → Git Integration
+2. Add it as a GitHub secret named `OVERLEAF_TOKEN`
+
+The LaTeX install and resume download steps are skipped automatically when not in hiring mode.

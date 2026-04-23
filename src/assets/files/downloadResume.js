@@ -3,7 +3,7 @@ const path = require('path');
 const fs = require('fs');
 const { execSync } = require('child_process');
 
-const token = 'olp_8MgcQcdo8V5cbooiSityFbcO9717Eg478pU0';
+const token = process.env.OVERLEAF_TOKEN;
 const repoId = '677c2381ecf88982715acdf5';
 const repoUrl = `https://git:${token}@git.overleaf.com/${repoId}`;
 

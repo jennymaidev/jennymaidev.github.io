@@ -23,7 +23,7 @@ function Navigation({parentToChild, modeChange}: any) {
   const { mode } = parentToChild;
   const lookingForWork = useLookingForWork();
   const baseItems = [['Background', 'expertise'], ['Experience', 'history']];
-  const navItems = lookingForWork 
+  const navItems = lookingForWork
     ? [...baseItems, ['Projects', 'projects']]
     : baseItems;
 
