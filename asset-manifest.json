@@ -1,24 +1,24 @@
 {
   "files": {
     "main.css": "/static/css/main.7c220eff.css",
-    "main.js": "/static/js/main.7463c6f1.js",
+    "main.js": "/static/js/main.27826862.js",
     "static/js/453.253ccfac.chunk.js": "/static/js/453.253ccfac.chunk.js",
     "static/media/bg-dark.png": "/static/media/bg-dark.ae283a4a6badfa5f0b97.png",
     "static/media/bg-light.png": "/static/media/bg-light.53aacd38c79cfb7f74e7.png",
     "static/media/mock04.png": "/static/media/mock04.5054eb42a5543c549396.png",
     "static/media/mock05.png": "/static/media/mock05.7ca976e3714efede8c00.png",
     "static/media/unimelb.jpg": "/static/media/unimelb.21b405c771043a126107.jpg",
-    "static/media/resume.pdf": "/static/media/resume.9f752cfb7cbe76e94f88.pdf",
+    "static/media/resume.pdf": "/static/media/resume.ae6a48685e2cc1c68c16.pdf",
     "static/media/ssa.png": "/static/media/ssa.6653d463e09e2ec1c8bb.png",
     "static/media/nanyang.png": "/static/media/nanyang.80a6874d64b81ed0d70d.png",
     "static/media/uiuc.png": "/static/media/uiuc.b13b1ce82ad8b7ba23ca.png",
     "index.html": "/index.html",
     "main.7c220eff.css.map": "/static/css/main.7c220eff.css.map",
-    "main.7463c6f1.js.map": "/static/js/main.7463c6f1.js.map",
+    "main.27826862.js.map": "/static/js/main.27826862.js.map",
     "453.253ccfac.chunk.js.map": "/static/js/453.253ccfac.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7c220eff.css",
-    "static/js/main.7463c6f1.js"
+    "static/js/main.27826862.js"
   ]
 }
