@@ -71,11 +71,88 @@ button:hover {
     width: 100%;
     padding: 0px 15%;
     min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+    --bg-shift-x: 0px;
+    --bg-shift-y: 0px;
     background-image: url("../images/bg-dark.png");
     background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
+    background-size: 112%;
+    background-position: calc(50% + var(--bg-shift-x)) calc(50% + var(--bg-shift-y));
+    transition: background-position 0.2s ease-out;
+}
+
+.blob {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(60px);
+    opacity: 0.35;
+    pointer-events: none;
+    z-index: 1;
+    animation: float 9s ease-in-out infinite;
+}
+
+.blob-one {
+    width: 260px;
+    height: 260px;
+    top: 10%;
+    left: 5%;
+    background: radial-gradient(circle, #a9744a 0%, transparent 70%);
+}
+
+.blob-two {
+    width: 320px;
+    height: 320px;
+    bottom: 5%;
+    left: 20%;
+    background: radial-gradient(circle, #8c6239 0%, transparent 70%);
+    animation-delay: 1.5s;
+    animation-duration: 11s;
+}
+
+.scroll-cue {
+    position: absolute;
+    bottom: 32px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    background: rgba(255, 255, 255, 0.05);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    animation: bounce 2s ease-in-out infinite;
+    transition: border-color 0.2s ease, background-color 0.2s ease, transform 0.2s ease;
+
+    &:hover {
+        border-color: #a9744a;
+        background: rgba(169, 116, 74, 0.2);
+        transform: translateX(-50%) scale(1.1);
+    }
+}
+
+.light-mode .scroll-cue {
+    border-color: rgba(31, 26, 22, 0.3);
+    color: #1f1a16;
+
+    &:hover {
+        border-color: #a9744a;
+        background: rgba(169, 116, 74, 0.1);
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateX(-50%) translateY(0);
+    }
+    50% {
+        transform: translateX(-50%) translateY(8px);
+    }
 }
 
 @keyframes glitch {
@@ -163,7 +240,7 @@ button:hover {
 
 .light-mode .about-section .content {
     .social_icons {
-        color: #0d1116;
+        color: #1f1a16;
     }
 }
 

@@ -65,7 +65,7 @@
 }
 
 .vertical-timeline-element h4 a {
-    color: #1e88e5;
+    color: #8c6239;
     text-decoration: none;
     font-weight: 600;
     transition: all 0.3s ease;
@@ -79,7 +79,7 @@
         left: 0;
         width: 0;
         height: 2px;
-        background: #1e88e5;
+        background: #8c6239;
         transition: width 0.3s ease;
     }
     
@@ -95,36 +95,36 @@
 
 .light-mode {
     .items-container h1::after {
-        background: #0d1116;
+        background: #1f1a16;
     }
     
     .vertical-timeline::before {
-        background: #0d1116;
+        background: #1f1a16;
     }
     
     .vertical-timeline-element h4 a {
-        color: #1e88e5;
+        color: #8c6239;
         
         &::after {
-            background: #1e88e5;
+            background: #8c6239;
         }
         
         &:hover {
-            color: #1e88e5;
+            color: #8c6239;
         }
     }
 }
 
 .dark-mode {
     .vertical-timeline-element h4 a {
-        color: #1e88e5;
+        color: #8c6239;
         
         &::after {
-            background: #1e88e5;
+            background: #8c6239;
         }
         
         &:hover {
-            color: #1e88e5;
+            color: #8c6239;
         }
     }
 }
@@ -135,10 +135,37 @@
 
 .vertical-timeline-element .vertical-timeline-element-date {
     color: white;
+    font-weight: 600;
+    transition: transform 0.25s ease, color 0.25s ease;
 }
 
 .svg-inline--fa {
     color: white;
+}
+
+.vertical-timeline-element-content {
+    transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.vertical-timeline-element:hover {
+    .vertical-timeline-element-content {
+        transform: translateY(-4px) scale(1.015);
+        box-shadow: 0 16px 32px rgba(169, 116, 74, 0.2) !important;
+    }
+
+    .vertical-timeline-element-date {
+        transform: translateX(4px);
+        color: #c9a27c;
+    }
+
+    .vertical-timeline-element-icon {
+        transform: scale(1.15) rotate(-8deg);
+        box-shadow: 0 0 0 6px rgba(169, 116, 74, 0.18) !important;
+    }
+}
+
+.vertical-timeline-element-icon {
+    transition: transform 0.3s ease, box-shadow 0.3s ease !important;
 }
 
 @media screen and (max-width: 1170px) {
