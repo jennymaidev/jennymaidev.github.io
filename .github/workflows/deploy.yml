@@ -1,12 +1,10 @@
 name: Deploy
 
 on:
-  schedule:
-    - cron: '0 0 * * 0'        # Every week (Sunday midnight UTC)
-  push:
-    branches:
-      - master
   workflow_dispatch:
+  # Automatic triggers (push + weekly cron) disabled — deploying locally
+  # instead via `make deploy` / `npm run localdeploy` to avoid any
+  # dependency on GitHub Actions billing.
 
 jobs:
   auto-deploy:
