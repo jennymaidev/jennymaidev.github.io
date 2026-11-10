@@ -1,12 +1,15 @@
 name: Deploy
 
 on:
-  schedule:
-    - cron: '0 0 * * 0'        # Every week (Sunday midnight UTC)
-  push:
-    branches:
-      - master
   workflow_dispatch:
+  # Automatic triggers (push + weekly cron) disabled to avoid relying on
+  # GitHub Actions billing. Deploy locally instead with `npm run localdeploy`.
+  # Re-enable by uncommenting below if Actions billing is sorted out again:
+  # schedule:
+  #   - cron: '0 0 * * 0'        # Every week (Sunday midnight UTC)
+  # push:
+  #   branches:
+  #     - master
 
 jobs:
   auto-deploy:
